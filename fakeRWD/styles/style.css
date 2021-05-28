@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Microsoft JhengHei";
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+header {
+  max-width: 1024px;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+.menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 5rem;
+  background: lightseagreen;
+  height: 2.5rem;
+}
+.menu ul li:hover {
+  background: lightsalmon;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  font-weight: bold;
+}
+main {
+  max-width: 1024px;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+.news {
+  width: 75%;
+}
+.news p {
+  margin: 1rem 0;
+}
+.banners {
+  width: 20%;
+}
+
+footer {
+  text-align: center;
+  margin: 2rem;
+}
+
+@media (max-width: 1199px) {
+  header {
+    margin: 2rem;
+  }
+  main {
+    flex-direction: column;
+    margin: 2rem;
+  }
+  .news {
+    width: 98%;
+  }
+
+  .banners {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .banners img {
+    width: 32%;
+  }
+}
+@media (max-width: 767px) {
+  header {
+    flex-direction: column;
+  }
+  .img {
+    display: flex;
+    justify-content: center;
+  }
+  .menu ul {
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 420px) {
+  .menu ul li {
+    width: 48%;
+  }
+  .banners {
+    flex-direction: column;
+  }
+  .banners img {
+    margin: 0.5rem 0;
+    width: 98%;
+  }
+}
