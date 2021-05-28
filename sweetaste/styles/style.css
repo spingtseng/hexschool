@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 120px;
+  width: 1024px;
+}
+.banner .logo img {
+  width: 220px;
+  height: 40px;
+}
+
+.banner .menu ul {
+  display: flex;
+  width: 270px;
+  justify-content: space-between;
+}
+.banner .menu ul li {
+  list-style: none;
+}
+.banner .menu ul li a {
+  text-decoration: none;
+  color: #3f5d45;
+  font-weight: 600;
+  display: block;
+}
+.banner .menu ul li a:hover {
+  color: #ffe180;
+  border-bottom: 5px solid #ffe180;
+}
+.bannerimg {
+  display: flex;
+  justify-content: center;
+}
+main {
+  display: flex;
+  margin-top: 60px;
+  justify-content: center;
+}
+.category {
+  margin: 0px 20px;
+}
+.category ul li {
+  width: 300px;
+  height: 65px;
+  border: 1px solid #eaf0ed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.category ul li a {
+  font-weight: 600;
+  font-size: 24px;
+  text-decoration: none;
+  display: block;
+}
+.category ul li.main {
+  background-color: #3f5d45;
+}
+.category ul li.main a {
+  color: #eaf0ed;
+}
+.category ul li.sort {
+  background-color: #ffffff;
+}
+.category ul li.sort:hover {
+  background-color: #eaf0ed;
+}
+.category ul li.sort a {
+  color: #3f5d45;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 700px;
+}
+.content .card {
+  margin: 0 20px;
+  margin-bottom: 20px;
+}
+.content .card .photo {
+  display: flex;
+  position: relative;
+}
+.content .card .photo img {
+  z-index: -1;
+}
+.content .card .photo p {
+  margin: 0 20px;
+  z-index: 1;
+  position: absolute;
+  background-color: #3f5d45;
+  width: 36px;
+  height: 105px;
+  padding: 5px;
+  padding-top: 10px;
+  color: #eaf0ed;
+  text-align: center;
+  font-weight: 600;
+}
+.content .card .photo img.love {
+  z-index: 1;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.content .card .info {
+  display: flex;
+  font-size: 20px;
+  color: #3f5d45;
+  text-align: center;
+  height: 56px;
+  border: 1px solid #eaf0ed;
+}
+
+.content .card .info .name {
+  width: 172px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #eaf0ed;
+}
+.content .card .info .price {
+  width: 127px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .card .add {
+  background: #eaf0ed;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .card .add a {
+  color: #3f5d45;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+}
+.content .card .add a:hover {
+    border-bottom: 3px solid #3f5d45;
+  }
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 12.5rem;
+}
+.nav ul {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 76px;
+}
+.nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #eaf0ed;
+}
+.nav ul li:hover {
+    background: #eaf0ed;
+}
+.nav ul li.active {
+  background-color: #3f5d45;
+  color: #eaf0ed;
+}
+
+.nav ul li a {
+  display: block;
+  color: #3f5d45;
+  text-decoration: none;
+  font-weight: 600;
+}
+.nav ul li.active a {
+  background-color: #3f5d45;
+  color: #eaf0ed;
+}
+footer .email {
+  height: 116px;
+  display: flex;
+  background: #3f5d45;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.email .subscribe {
+  color: #eaf0ed;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.email .subscribe img {
+  margin: 20px;
+  width: 40px;
+  height: 40px;
+}
+.email .send {
+  height: 56px;
+  display: flex;
+}
+.email .send .left {
+  background-color: #eaf0ed;
+  height: 56px;
+  width: 316px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+}
+.email .send .right {
+  background-color: #ffe180;
+  height: 56px;
+  width: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.email .send .right a {
+  display: block;
+}
+
+.footer {
+  background: #eaf0ed;
+}
+.footer .info {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 300px;
+}
+.footer .info .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer .info .contact img {
+  width: 170px;
+}
+.footer .info .contact p {
+  color: #3f5d45;
+  font-family: Helvetica;
+  font-weight: 500;
+}
+.footer .info .slogan {
+  writing-mode: vertical-rl;
+  font-family: "NSimSun";
+  font-weight: bolder;
+  letter-spacing: 10px;
+  font-size: 36px;
+  color: #3f5d45;
+}
+.footer .links {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 300px;
+    padding-bottom: 30px;
+}
+
+.footer .links .media img {
+  width: 32px;
+}
+.footer .links .copyright {
+  color: #3f5d45;
+  font-family: Times;
+}
